@@ -1,6 +1,8 @@
 <!--  -->
 <template>
-<div class=''></div>
+<div class='comment'>
+评论
+</div>
 </template>
 
 <script>
@@ -8,8 +10,11 @@
 //例如：import 《组件名称》 from '《组件路径》';
 
 export default {
+name:'Comment',
 //import引入的组件需要注入到对象中才能使用
-components: {},
+components: {
+   
+},
 data() {
 //这里存放数据
 return {

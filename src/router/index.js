@@ -4,10 +4,10 @@ import Router from "vue-router";
 Vue.use(Router);
 export default new VueRouter({
     mode:'history',
-    routers:[
+    routes:[
         {
             path:'/',
-            redirect:'goods'
+            redirect:'/goods'
         },
         {
             path:'/goods',
@@ -25,5 +25,6 @@ export default new VueRouter({
             component: () => import("../views/merchant/index.vue"),
         },
         
-    ]
+    ],
+    linkActiveClass: "active",
 })

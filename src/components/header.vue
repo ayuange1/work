@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-<div class='header'>
+<div id='header'>
     <div class="wrap">
         <div class="con clean">
             <img src="../assets/logo.jpg" alt="">
@@ -8,15 +8,29 @@
                 <h3><i>品牌</i>粥品香坊（回龙观）</h3>
                 <p>蜂鸟转送/38分钟送达</p>
                 <p><b>减</b>在线支付满28减5</p>
-            </div>
+          </div>
         </div>
-
+        <button class="more">5个  ></button>
     </div>
     <div class="notice">
         <i>公告</i>
-        <p> "粥品香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。"</p>
+        <p> "粥品香坊其烹饪粥料的秘方源于中国千年古法，在融和现代制作工艺，由世界烹饪大师屈浩先生领衔研发。坚守纯天然、0添加的良心品质深得消费者青睐，发展至今成为粥类的引领品牌。是2008年奥运会和2013年园博会指定餐饮服务商。"</p><span class="jian">></span>
+    </div>
+    <div class="head">
+            <ul>
+				<router-link tag="li" to="/goods">
+					<p>商品</p>
+				</router-link>
+				<router-link tag="li" to="/comment">			
+					<p>评论</p>
+				</router-link>
+				<router-link tag="li" to="/merchant">	
+					<p>商家</p>
+				</router-link>
+			</ul>
     </div>
 </div>
+
 </template>
 
 <script>
@@ -93,6 +107,7 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 .wrap{
     background:#635950;
     padding: 24px 11px 17px 24px;
+    position: relative;
 }
 .notice p{
     width: 100%;
@@ -106,6 +121,7 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 .notice{
     background: #57524f;
     position: relative;
+    padding: 0 10px;
 }
 .notice i{
     color: #394149;
@@ -114,6 +130,30 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
     height: 15px;
     font-weight: 800;
     position: absolute;
+    top: 7px;
 }
+.more{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    color: #fff;
+    background: #4d4239;
+    height: 24px;
+    width: 48px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.jian{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    color: #fff;
+}
+.head{ width:100%; height:25px; background: white; border-top:2px #ebe8e3 solid;}
+.head ul{ display: flex; text-align: center; height:25px; align-items:center;}
+.head ul li{ flex:1; height:20px;}
+.head ul li.active{ color: #f03d37;}
+.head ul i{ font-size: 20px;}
+.head ul p{ font-size: 12px; line-height: 18px;}
 
 </style>
