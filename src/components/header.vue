@@ -149,8 +149,8 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
     right: 7px;
     color: #fff;
 }
-.head{ width:100%; height:25px; background: white; border-top:2px #ebe8e3 solid;}
-.head ul{ display: flex; text-align: center; height:25px; align-items:center;}
+.head{ width:100%; height:40px; background: white; border-bottom:1px #ebe8e3 solid;}
+.head ul{ display: flex; text-align: center; height:40px; align-items:center;justify-content: center;}
 .head ul li{ flex:1; height:20px;}
 .head ul li.active{ color: #f03d37;}
 .head ul i{ font-size: 20px;}
